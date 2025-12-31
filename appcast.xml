@@ -3,6 +3,18 @@
     <channel>
         <title>AudioDucker</title>
         <item>
+            <title>0.0.2</title>
+            <pubDate>Wed, 31 Dec 2025 16:12:32 +0530</pubDate>
+            <link>https://raw.githubusercontent.com/atalw/audioducker-releases/main/appcast.xml</link>
+            <sparkle:version>2</sparkle:version>
+            <sparkle:shortVersionString>0.0.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h2>AudioDucker 0.0.2</h2>
+Release 0.0.2
+]]></description>
+            <enclosure url="https://github.com/atalw/audioducker-releases/releases/download/v0.0.2/AudioDucker-0.0.2.zip" length="7257077" type="application/octet-stream" sparkle:edSignature="LyR+J4aVMxJial63XnuApjjSIUhWMibNuFDelkMzpPTroA2LePVkuyJeXSoPwgbzuSX0IO2okkuSq51/Q5EIDg=="/>
+        </item>
+        <item>
             <title>0.0.1</title>
             <pubDate>Wed, 31 Dec 2025 12:36:49 +0530</pubDate>
             <sparkle:version>1</sparkle:version>
