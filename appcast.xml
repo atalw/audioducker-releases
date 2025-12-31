@@ -1,29 +1,42 @@
-<?xml version="1.0" standalone="yes"?>
-<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
     <channel>
         <title>AudioDucker</title>
+        <link>https://raw.githubusercontent.com/atalw/audioducker-releases/main/appcast.xml</link>
+        <description>AudioDucker Update Feed</description>
+        <language>en</language>
         <item>
-            <title>0.0.2</title>
-            <pubDate>Wed, 31 Dec 2025 16:12:32 +0530</pubDate>
+            <title>0.0.3</title>
+            <pubDate>Wed, 31 Dec 2025 20:03:30 +0530</pubDate>
             <link>https://raw.githubusercontent.com/atalw/audioducker-releases/main/appcast.xml</link>
-            <sparkle:version>2</sparkle:version>
-            <sparkle:shortVersionString>0.0.2</sparkle:shortVersionString>
+            <sparkle:version>3</sparkle:version>
+            <sparkle:shortVersionString>0.0.3</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h2>AudioDucker 0.0.2</h2>
-Release 0.0.2
+            <description><![CDATA[<h2>AudioDucker 0.0.3</h2>
+<h3>Major Refactoring: MediaRemote Adapter Integration</h3>
+<ul>
+<li><strong>Removed Accessibility Permission Requirement</strong>: AudioDucker no longer requires Accessibility permissions for media control</li>
+<li><strong>New MediaRemote Adapter</strong>: Replaced MediaKeyController with bundled MediaRemote adapter for universal media control</li>
+<li><strong>Improved Architecture</strong>: </li>
+</ul>
+  - Added <code>AdapterMediaController</code> for media playback control
+  - Added <code>MediaRemoteAdapterClient</code> for adapter communication
+  - Refactored <code>SystemAudioSampler</code> to use MediaRemote adapter
+<ul>
+<li><strong>Simplified Onboarding</strong>: Removed accessibility permission requests from onboarding flow</li>
+<li><strong>Test Environment Fixes</strong>: Fixed crashes when running tests by gracefully handling status item creation</li>
+<li><strong>Updated Documentation</strong>: README.md updated to reflect new architecture and removed accessibility requirements</li>
+</ul>
+<h3>Technical Changes</h3>
+<ul>
+<li>Removed <code>MediaKeyController.swift</code> (205 lines)</li>
+<li>Removed <code>MediaKeyPlayer</code> class</li>
+<li>Added <code>AdapterMediaController.swift</code> and <code>MediaRemoteAdapterClient.swift</code></li>
+<li>Updated all tests to work with new architecture</li>
+<li>Enhanced <code>MenuBarController</code> to handle test environments</li>
+</ul>
 ]]></description>
-            <enclosure url="https://github.com/atalw/audioducker-releases/releases/download/v0.0.2/AudioDucker-0.0.2.zip" length="7257077" type="application/octet-stream" sparkle:edSignature="LyR+J4aVMxJial63XnuApjjSIUhWMibNuFDelkMzpPTroA2LePVkuyJeXSoPwgbzuSX0IO2okkuSq51/Q5EIDg=="/>
-        </item>
-        <item>
-            <title>0.0.1</title>
-            <pubDate>Wed, 31 Dec 2025 12:36:49 +0530</pubDate>
-            <sparkle:version>1</sparkle:version>
-            <sparkle:shortVersionString>0.0.1</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/atalw/audioducker-releases/releases/download/v0.0.1/AudioDucker-0.0.1.zip" length="7191863" type="application/octet-stream" sparkle:edSignature="kkq6roz5VU+cMiOq07hzM6p/urrpPsZNpFvqW359lFSH2c3DBKS2T03TQLy8n16XMGRuyn8Ddxc3wy2xl1HtAg=="/>
-            <description><![CDATA[<h2>AudioDucker 0.0.1</h2>
-<p>Latest AudioDucker update.</p>
-]]></description>
+            <enclosure url="https://github.com/atalw/audioducker-releases/releases/download/v0.0.3/AudioDucker-0.0.3.zip" length="7453922" type="application/octet-stream" sparkle:edSignature="RurI2rMMOqUL9EcU2pKMJFXGi5ArksDzMOi/NGNTaPyEwPUFTeO3JxbySdQwb519ow3cehjyu7VqPm+/DHu9Dg=="/>
         </item>
     </channel>
 </rss>
