@@ -6,6 +6,42 @@
         <description>AudioDucker Update Feed</description>
         <language>en</language>
         <item>
+            <title>0.0.4</title>
+            <pubDate>Thu, 01 Jan 2026 00:10:40 +0530</pubDate>
+            <link>https://raw.githubusercontent.com/atalw/audioducker-releases/main/appcast.xml</link>
+            <sparkle:version>4</sparkle:version>
+            <sparkle:shortVersionString>0.0.4</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h2>AudioDucker 0.0.4</h2>
+<h3>License Key Management</h3>
+<ul>
+<li><strong>Secure License Storage</strong>: License keys are now stored securely in Keychain instead of UserDefaults</li>
+<li><strong>License Activation Flow</strong>: Implemented async license activation/deactivation with network service abstraction</li>
+<li><strong>Rate Limiting</strong>: Added rate limiting for license activation attempts (3 attempts per minute)</li>
+<li><strong>App Lifecycle Integration</strong>: App now properly sets up/tears down based on license state via notifications</li>
+<li><strong>Enhanced License UI</strong>: </li>
+</ul>
+  - Added loading spinner during activation
+  - Improved error handling with specific error messages
+  - Removed skip button to enforce license requirement
+<ul>
+<li><strong>License Service Architecture</strong>: </li>
+</ul>
+  - Added <code>LicenseServiceProtocol</code> with <code>NetworkLicenseService</code> implementation
+  - Added <code>KeychainHelper</code> for secure key storage
+  - Added <code>RateLimitService</code> for activation attempt limiting
+<h3>Technical Changes</h3>
+<ul>
+<li>Refactored <code>AppDelegate</code> to handle license-activated/deactivated notifications</li>
+<li>Updated <code>LicenseViewController</code> with async activation and better UX</li>
+<li>Added notification constants for license and microphone permission events</li>
+<li>Updated tests to work with async license operations</li>
+<li>Improved <code>SetupCompleteViewController</code> text wrapping</li>
+</ul>
+]]></description>
+            <enclosure url="https://github.com/atalw/audioducker-releases/releases/download/v0.0.4/AudioDucker-0.0.4.zip" length="7491792" type="application/octet-stream" sparkle:edSignature="ynpObfAgPBp22d5ez9wYXTH73b9vOLA9PK0qYC4TFGeDVSy/967yWgx18yVREcTewVd+7jjnIReVI5V4JCH9Cg=="/>
+        </item>
+        <item>
             <title>0.0.3</title>
             <pubDate>Wed, 31 Dec 2025 20:03:30 +0530</pubDate>
             <link>https://raw.githubusercontent.com/atalw/audioducker-releases/main/appcast.xml</link>
