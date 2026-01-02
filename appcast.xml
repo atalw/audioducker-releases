@@ -6,6 +6,31 @@
         <description>AudioDucker Update Feed</description>
         <language>en</language>
         <item>
+            <title>0.0.5</title>
+            <pubDate>Sat, 03 Jan 2026 00:44:41 +0530</pubDate>
+            <link>https://raw.githubusercontent.com/atalw/audioducker-releases/main/appcast.xml</link>
+            <sparkle:version>5</sparkle:version>
+            <sparkle:shortVersionString>0.0.5</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h2>AudioDucker 0.0.5</h2>
+<h3>UI & UX Refinements</h3>
+<ul>
+<li><strong>Menu Bar Overhaul</strong>: All menu items converted to custom SwiftUI views for consistent 22px padding and improved appearance.</li>
+<li><strong>Simplified Status</strong>: Status text flattened to "Active" (Green) and "Disabled" (Gray) for better clarity.</li>
+<li><strong>Improved Sliders</strong>: Sliders now snap to 5% visual increments, providing more precise and intuitive control.</li>
+<li><strong>Intuitive Sensitivity</strong>: Inverted the sensitivity slider so higher values correctly represent higher sensitivity (easier triggering).</li>
+<li><strong>Navigation Cleanup</strong>: Consolidated Settings and Update sections and removed non-functional shortcuts.</li>
+</ul>
+<h3>Features & Bug Fixes</h3>
+<ul>
+<li><strong>Context-Aware Disable</strong>: The "Disable" menu item now accurately reflects whether AudioDucker is disabled for the currently active application.</li>
+<li><strong>Concurrency Fixes</strong>: Resolved MainActor-related threading issues in global hotkey actions.</li>
+<li><strong>Layout Consistency</strong>: Web preview updated to mirror MacOS menu bar layout and behavior changes.</li>
+</ul>
+]]></description>
+            <enclosure url="https://github.com/atalw/audioducker-releases/releases/download/v0.0.5/AudioDucker-0.0.5.zip" length="7347494" type="application/octet-stream" sparkle:edSignature="lr2b0sH8ij9me2Z7APYeTtHUDFrSvOvds48OxiF6ZYiU2p3kJWWjsGfCeKl+vlwKuA9z9NJIxB9L/26UUYELDw=="/>
+        </item>
+        <item>
             <title>0.0.4</title>
             <pubDate>Thu, 01 Jan 2026 00:10:40 +0530</pubDate>
             <link>https://raw.githubusercontent.com/atalw/audioducker-releases/main/appcast.xml</link>
