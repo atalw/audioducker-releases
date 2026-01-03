@@ -6,6 +6,26 @@
         <description>AudioDucker Update Feed</description>
         <language>en</language>
         <item>
+            <title>0.0.6</title>
+            <pubDate>Sat, 03 Jan 2026 16:12:23 +0530</pubDate>
+            <link>https://raw.githubusercontent.com/atalw/audioducker-releases/main/appcast.xml</link>
+            <sparkle:version>6</sparkle:version>
+            <sparkle:shortVersionString>0.0.6</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h2>AudioDucker 0.0.6</h2>
+<h3>Onboarding & Settings Refinements</h3>
+<ul>
+<li><strong>Polished Experience</strong>: Renamed "Get Started" to "Start Ducking" and updated license UI copy for better clarity.</li>
+<li><strong>Improved Settings</strong>: Fixed a bug where the Settings window wouldn't reset to the General tab and ensured the license status refreshes correctly.</li>
+<li><strong>License Enforcement</strong>: Added logic to redirect to onboarding if a valid license is missing while in settings mode.</li>
+<li><strong>Developer Tools</strong>: Extracted permission messaging logic into a testable component and verified with new unit tests.</li>
+<li><strong>Robustness</strong>: Fixed a regression in audio pause logic to ensure music reliably stops even when detection state is uncertain.</li>
+<li><strong>Internal Fixes</strong>: Resolved a resource path issue that was blocking UI test builds and updated dock icon visibility logic.</li>
+</ul>
+]]></description>
+            <enclosure url="https://github.com/atalw/audioducker-releases/releases/download/v0.0.6/AudioDucker-0.0.6.zip" length="7389555" type="application/octet-stream" sparkle:edSignature="bjsjDW/hd7LEtzE+dFbbXCll/uGR1kSN/7QxHK6zTSgSrlGfzidrs7HmjxBwNrKepzCUYrg0RB25ez0PRjIMDQ=="/>
+        </item>
+        <item>
             <title>0.0.5</title>
             <pubDate>Sat, 03 Jan 2026 00:44:41 +0530</pubDate>
             <link>https://raw.githubusercontent.com/atalw/audioducker-releases/main/appcast.xml</link>
@@ -65,39 +85,6 @@
 </ul>
 ]]></description>
             <enclosure url="https://github.com/atalw/audioducker-releases/releases/download/v0.0.4/AudioDucker-0.0.4.zip" length="7491792" type="application/octet-stream" sparkle:edSignature="ynpObfAgPBp22d5ez9wYXTH73b9vOLA9PK0qYC4TFGeDVSy/967yWgx18yVREcTewVd+7jjnIReVI5V4JCH9Cg=="/>
-        </item>
-        <item>
-            <title>0.0.3</title>
-            <pubDate>Wed, 31 Dec 2025 20:03:30 +0530</pubDate>
-            <link>https://raw.githubusercontent.com/atalw/audioducker-releases/main/appcast.xml</link>
-            <sparkle:version>3</sparkle:version>
-            <sparkle:shortVersionString>0.0.3</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h2>AudioDucker 0.0.3</h2>
-<h3>Major Refactoring: MediaRemote Adapter Integration</h3>
-<ul>
-<li><strong>Removed Accessibility Permission Requirement</strong>: AudioDucker no longer requires Accessibility permissions for media control</li>
-<li><strong>New MediaRemote Adapter</strong>: Replaced MediaKeyController with bundled MediaRemote adapter for universal media control</li>
-<li><strong>Improved Architecture</strong>: </li>
-</ul>
-  - Added <code>AdapterMediaController</code> for media playback control
-  - Added <code>MediaRemoteAdapterClient</code> for adapter communication
-  - Refactored <code>SystemAudioSampler</code> to use MediaRemote adapter
-<ul>
-<li><strong>Simplified Onboarding</strong>: Removed accessibility permission requests from onboarding flow</li>
-<li><strong>Test Environment Fixes</strong>: Fixed crashes when running tests by gracefully handling status item creation</li>
-<li><strong>Updated Documentation</strong>: README.md updated to reflect new architecture and removed accessibility requirements</li>
-</ul>
-<h3>Technical Changes</h3>
-<ul>
-<li>Removed <code>MediaKeyController.swift</code> (205 lines)</li>
-<li>Removed <code>MediaKeyPlayer</code> class</li>
-<li>Added <code>AdapterMediaController.swift</code> and <code>MediaRemoteAdapterClient.swift</code></li>
-<li>Updated all tests to work with new architecture</li>
-<li>Enhanced <code>MenuBarController</code> to handle test environments</li>
-</ul>
-]]></description>
-            <enclosure url="https://github.com/atalw/audioducker-releases/releases/download/v0.0.3/AudioDucker-0.0.3.zip" length="7453922" type="application/octet-stream" sparkle:edSignature="RurI2rMMOqUL9EcU2pKMJFXGi5ArksDzMOi/NGNTaPyEwPUFTeO3JxbySdQwb519ow3cehjyu7VqPm+/DHu9Dg=="/>
         </item>
     </channel>
 </rss>
