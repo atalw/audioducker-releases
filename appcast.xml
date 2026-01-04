@@ -6,6 +6,26 @@
         <description>AudioDucker Update Feed</description>
         <language>en</language>
         <item>
+            <title>1.0.0</title>
+            <pubDate>Sun, 04 Jan 2026 12:24:45 +0530</pubDate>
+            <link>https://raw.githubusercontent.com/atalw/audioducker-releases/main/appcast.xml</link>
+            <sparkle:version>100</sparkle:version>
+            <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h2>AudioDucker 1.0.0</h2>
+<h3>Welcome to AudioDucker!</h3>
+AudioDucker is a macOS utility that automatically ducks your media volume when you start talking. Perfect for streamers, podcasters, and professionals who want their music to automatically fade out when they speak, and resume when they stop. 
+<strong>Key Features:</strong>
+<ul>
+<li><strong>Automatic Ducking</strong>: Automatically pause or lower media volume when your microphone is active.</li>
+<li><strong>Streaming Mode</strong>: Uses advanced AI voice activity detection (VAD) to differentiate speech from background noise.</li>
+<li><strong>Customizable Actions</strong>: Choose whether to pause/mute or simply reduce volume.</li>
+<li><strong>Lightweight & Private</strong>: Runs locally on your Mac; no audio is ever recorded or transmitted.</li>
+</ul>
+]]></description>
+            <enclosure url="https://github.com/atalw/audioducker-releases/releases/download/v1.0.0/AudioDucker-1.0.0.zip" length="7442086" type="application/octet-stream" sparkle:edSignature="BloD+3QwzP6qqwwm4klLyaL1UxujfyXuhg3HLaSHHuzSHcaJmpwoIe4MoTJdXMlKBQ5plFQmWhlOhWnu1Ws4DQ=="/>
+        </item>
+        <item>
             <title>0.0.6</title>
             <pubDate>Sat, 03 Jan 2026 16:12:23 +0530</pubDate>
             <link>https://raw.githubusercontent.com/atalw/audioducker-releases/main/appcast.xml</link>
@@ -49,42 +69,6 @@
 </ul>
 ]]></description>
             <enclosure url="https://github.com/atalw/audioducker-releases/releases/download/v0.0.5/AudioDucker-0.0.5.zip" length="7347494" type="application/octet-stream" sparkle:edSignature="lr2b0sH8ij9me2Z7APYeTtHUDFrSvOvds48OxiF6ZYiU2p3kJWWjsGfCeKl+vlwKuA9z9NJIxB9L/26UUYELDw=="/>
-        </item>
-        <item>
-            <title>0.0.4</title>
-            <pubDate>Thu, 01 Jan 2026 00:10:40 +0530</pubDate>
-            <link>https://raw.githubusercontent.com/atalw/audioducker-releases/main/appcast.xml</link>
-            <sparkle:version>4</sparkle:version>
-            <sparkle:shortVersionString>0.0.4</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h2>AudioDucker 0.0.4</h2>
-<h3>License Key Management</h3>
-<ul>
-<li><strong>Secure License Storage</strong>: License keys are now stored securely in Keychain instead of UserDefaults</li>
-<li><strong>License Activation Flow</strong>: Implemented async license activation/deactivation with network service abstraction</li>
-<li><strong>Rate Limiting</strong>: Added rate limiting for license activation attempts (3 attempts per minute)</li>
-<li><strong>App Lifecycle Integration</strong>: App now properly sets up/tears down based on license state via notifications</li>
-<li><strong>Enhanced License UI</strong>: </li>
-</ul>
-  - Added loading spinner during activation
-  - Improved error handling with specific error messages
-  - Removed skip button to enforce license requirement
-<ul>
-<li><strong>License Service Architecture</strong>: </li>
-</ul>
-  - Added <code>LicenseServiceProtocol</code> with <code>NetworkLicenseService</code> implementation
-  - Added <code>KeychainHelper</code> for secure key storage
-  - Added <code>RateLimitService</code> for activation attempt limiting
-<h3>Technical Changes</h3>
-<ul>
-<li>Refactored <code>AppDelegate</code> to handle license-activated/deactivated notifications</li>
-<li>Updated <code>LicenseViewController</code> with async activation and better UX</li>
-<li>Added notification constants for license and microphone permission events</li>
-<li>Updated tests to work with async license operations</li>
-<li>Improved <code>SetupCompleteViewController</code> text wrapping</li>
-</ul>
-]]></description>
-            <enclosure url="https://github.com/atalw/audioducker-releases/releases/download/v0.0.4/AudioDucker-0.0.4.zip" length="7491792" type="application/octet-stream" sparkle:edSignature="ynpObfAgPBp22d5ez9wYXTH73b9vOLA9PK0qYC4TFGeDVSy/967yWgx18yVREcTewVd+7jjnIReVI5V4JCH9Cg=="/>
         </item>
     </channel>
 </rss>
